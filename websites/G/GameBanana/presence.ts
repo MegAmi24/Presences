@@ -291,11 +291,11 @@ presence.on("UpdateData", async () => {
 					presenceData.state = header.textContent.split("- A")[0];
 				}
 				if (document.querySelector("#PrivateAccessNoticeModule"))
-					presenceData.state = "(Private)";
+					presenceData.state = "Private Submission";
 				else if (document.querySelector("#WithholdNoticeModule"))
-					presenceData.state = "(Withheld)";
+					presenceData.state = "Withheld Submission";
 				else if (document.querySelector("#TrashNoticeModule"))
-					presenceData.state = "(Trashed)";
+					presenceData.state = "Trashed Submission";
 			} else {
 				presenceData.details = `Browsing
 					${document
